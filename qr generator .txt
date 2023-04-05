@@ -1,0 +1,11 @@
+#   ****Automated Quick responce code generator**** #
+
+import qrcode as qr  #importing the qr module 
+
+data=input('enter the data do you wanted to store in qr : \n') #takeing the data from user with the use of input function
+
+create=qr.make(data) #making the data to qr using the make function in pyqrcode library in python
+
+create.save(f'{data}.png') #saving the qr code in png extension and also using f string to make easy to code
+ 
+ 
